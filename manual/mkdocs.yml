@@ -4,7 +4,6 @@ theme:
   name: readthedocs
   custom_dir: overrides
 nav:
-  - HelloWorld : HelloWorld.md
   - SoSTrades :  
     - Installation : 
        - Noyau de calcul : SoSTrades/install_simple.md
