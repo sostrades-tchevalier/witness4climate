@@ -1,0 +1,13 @@
+site_name: WITNESS4Climate
+site_url: https://www.witness4climate.org/html/tests
+theme: 
+  name: readthedocs
+  custom_dir: overrides
+nav:
+  - HelloWorld : HelloWorld.md
+  - SoSTrades :  
+    - Installation : 
+       - Noyau de calcul : SoSTrades/install_simple.md
+       - Plateforme complete : SoSTrades/install_full.md
+  - About : About.md 
+  

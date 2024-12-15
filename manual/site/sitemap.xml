@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://www.witness4climate.org/html/tests/</loc>
+         <lastmod>2024-12-11</lastmod>
+    </url>
+    <url>
+         <loc>https://www.witness4climate.org/html/tests/About/</loc>
+         <lastmod>2024-12-11</lastmod>
+    </url>
+    <url>
+         <loc>https://www.witness4climate.org/html/tests/HelloWorld/</loc>
+         <lastmod>2024-12-11</lastmod>
+    </url>
+    <url>
+         <loc>https://www.witness4climate.org/html/tests/SoSTrades/install_full/</loc>
+         <lastmod>2024-12-11</lastmod>
+    </url>
+    <url>
+         <loc>https://www.witness4climate.org/html/tests/SoSTrades/install_simple/</loc>
+         <lastmod>2024-12-11</lastmod>
+    </url>
+</urlset>

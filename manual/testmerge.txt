@@ -1,0 +1,5 @@
+Hello, this is for a test
+This line will be modified in all branches added from A added from B
+This line will be only in branch A added from A
+This line only in branch B added from B
+
