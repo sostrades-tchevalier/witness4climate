@@ -6,7 +6,7 @@ theme:
 nav:
   - SoSTrades :  
     - Installation : 
-       - Noyau de calcul : SoSTrades/install_simple.md
-       - Plateforme complete : SoSTrades/install_full.md
+       - Basic : SoSTrades/install_basic.md
+       - Platform : SoSTrades/install_platform.md
   - About : About.md 
   
