@@ -3,51 +3,61 @@ date:
   created: 2024-12-11
 draft: true
 ---
-
 These basic instructions will install simply sostrades core on your local platform.
-It will enable you to run studies with a minimum setup, not benefiting but not needing neither any cloud, access rights, traceability or interactive GUI.
-
+They were tested using a fresh LinuxMint21.1 in a VirtualBox with just a round of system & drivers update, plus installing git and vim.
+ 
 # Basic install
-
+ 
 ## Setting up your environment
-
+ 
 - Check or install basic development blocs
-
-> `sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl`
-
-
-- Install [pyenv](https://github.com/pyenv/pyenv) (guidelines below are from [RealPython article](https://realpython.com/intro-to-pyenv/) ). This will allow you avoid interferences between various versions of python and libraries that might be installed on your local platform...
-
-> `curl https://pyenv.run | bash`
-
-
-- Install Python3.9 using pyenv (yes, we have moving to a higher version of python in our dolist :-)
-
-> `pyenv install 3.9.21`
-
-- Install Python virtual environment and activate it (if you need to deactivate it later, you can just type `deactivate`, which is an alias that the `activate` script will have created). Again this will allow you to have a specific set of libraries installed for your python interpreter without interferences.
-
-> `python -m venv <venv directory>`
->
-> `source <venv directory>/bin/activate`
-
-
+ 
+  `sudo apt-get install libmysqlclient-dev build-essential libldap2-dev libsasl2-dev python-dev-is-python3 libssl-dev`
+ 
+- Install Python3.9.21 from (source tarball)[https://www.python.org/downloads/release/python-3921/]
+ 
+  . create a .local folder in your home directory if not already existing
+ 
+  . create the following subfolders in it (if not already there): pub, include, src, lib, bin, man
+ 
+  . put the downloaded tarball in ~/.local/pub
+ 
+  . move in the ~/.local/src folder
+ 
+  `tar xzvf ../pub/Python-3.9.21.tgz`
+ 
+  `cd Python-3.9.21`
+ 
+  `./configure --prefix=$HOME/.local`
+ 
+  `make`
+ 
+  `make test`
+ 
+  `make install`
+ 
+  . Use a new shell and check $HOME/.local/bin was added to your $PATH
+ 
+- Install or upgrade pip,, install venv
+ 
+  `python3.9 -m pip install --upgrade pip`
+ 
+  `pip3.9 install virtualenv`
+ 
 ## Clone sostrades-core and install on your local system
-
-- Clone [sostrades-core](https://github.com/os-climate/sostrades-core) to your local disk
-
-> `git clone https://github.com/os-climate/sostrades-core.git`
-
-- Install needed python libraries requirements for sostraces-core through pip
-
-> `pip install -r sostrades-core/requirements.in`
-
+ 
+- Clone [sostrades-dev-tools](https://github.com/os-climate/sostrades-dev-tools) to your local disk
+ 
+> `git clone https://github.com/os-climate/sostrades-dev-tools`
+ 
+ 
 - Run the setup
-
-> `cd sostrades-core; python setup.py install`
-
+ 
+  - move in the sostrades-dev-tools folder you just checked out from git
+ 
+  `~/.local/bin/python3.9 scripts/PrepareDevEnv.py`
+ 
+  `~/.local/bin/python3.9 scripts/PrepareVenv.py`
+ 
 ## Test your setup :-)
 
-test: python
-
-bla bla
