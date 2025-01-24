@@ -1,0 +1,20 @@
+site_name: WITNESS4Climate
+site_url: https://www.witness4climate.org/html/quickstart
+theme: 
+  name: readthedocs
+  custom_dir: overrides
+nav:
+  - Prerequisites :  
+    - python : prerequisites/python.md
+    - git    : prerequisites/git.md
+  - Installing the platform :  
+    - installing   : installing/installing.md
+    - testing      : installing/testing.md
+  - Developing :  
+    - creating own repository : developing/createrepo.md
+    - creating own module     : developing/createmodule.md
+    - creating first models   : developing/createmodel.md
+    - creating first process  : developing/createprocess.md
+  - Deployment :  
+    - overview : deploying/steps.md
+  
