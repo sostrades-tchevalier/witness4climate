@@ -11,10 +11,11 @@ nav:
     - installing   : installing/installing.md
     - testing      : installing/testing.md
   - Developing :  
-    - creating own repository : developing/createrepo.md
-    - creating own module     : developing/createmodule.md
-    - creating first models   : developing/createmodel.md
-    - creating first process  : developing/createprocess.md
+    - understanding the basics    : developing/basics.md
+    - creating own repository     : developing/createrepo.md
+    - creating own module         : developing/createmodule.md
+    - creating first discipline   : developing/creatediscipline.md
+    - creating first process      : developing/createprocess.md
   - Deployment :  
     - overview : deploying/steps.md
   
