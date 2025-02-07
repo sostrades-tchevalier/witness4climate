@@ -22,13 +22,13 @@ You will need approximately 10GB of disk space to install the platform.
   
   - run the `PrepDevEnv.py` script from there **using your Python3.9.13 executable** <br>
     to create the development environment<br>
-    `<path_to_python_3.9_executable> scripts/PrepareDevEnv.py`
+    `<path_to_python_3.9_executable> scripts\PrepareDevEnv.py`
     
 ## Create and activate a Python virtual environment
 
   - run the `PrepareVenv.py` script **using your Python3.9.13 executable** <br>
     to create a specific python virtual environment<br>
-    `<path_to_python_3.9_executable> scripts/PrepareVEnv.py`
+    `<path_to_python_3.9_executable> scripts\PrepareVEnv.py`
     
   - activate the virtual environment <br>
     `.\.venv\Scripts\activate`<br>
@@ -44,23 +44,23 @@ You will need approximately 10GB of disk space to install the platform.
   <small>We now directly use `python`instead of `<path_to_python_3.9_executable>` as we are in the proper virtual environment</small>
   
   - run the `Configuration.py` script (always from sos-trades-dev folder as previously)<br>
-    `python scripts/Configure.py`
+    `python scripts\Configure.py`
     
-  - run the `NodeInstalation.py` script to install NVS local webserver capability<br>
-    `python scripts/NodeInstalation.py`<br>
+  - run the `NodeInstallation.py` script to install NVS local webserver capability<br>
+    `python scripts\NodeInstallation.py`<br>
     At the end of the script it will ask you if you want to install NVS to build the web gui : answer yes
     
   - run the `CreateUser.py` script to create a local user account for you<br>
-    `python scripts/CreateUser.py`<br>
+    `python scripts\CreateUser.py`<br>
     The script will ask you to input some information (user, name, last name and e-mail) : 
     leaving any of these fields empty will result in the script crashing, at least a character is required.<br>
     <br>
     <p>**The user you entered will need to be used when accessing the platform<br>
-      The password you will need to connect is in <br>`sostrades-dev-tools/platform/sostrades-webapi/sos_trades_api/secret/`<br>
+      The password you will need to connect is in a file located in <br>`sostrades-dev-tools\platform\sostrades-webapi\sos_trades_api\secret\`<br>
       You should keep both :-)**</p>
   
   - run the `UpdateOntology.py` script to initialize the ontology of parameters, models and processes :<br>
-    `python scripts/UpdateOntology.py`<br>
+    `python scripts\UpdateOntology.py`<br>
   
     
 
