@@ -44,7 +44,7 @@ You will need approximately 10GB of disk space to install the platform.
   <small>We now directly use `python`instead of `<path_to_python_3.9_executable>` as we are in the proper virtual environment</small>
   
   - run the `Configuration.py` script (always from sos-trades-dev folder as previously)<br>
-    `python scripts\Configure.py`
+    `python scripts\Configuration.py`
     
   - run the `NodeInstallation.py` script to install NVS local webserver capability<br>
     `python scripts\NodeInstallation.py`<br>
